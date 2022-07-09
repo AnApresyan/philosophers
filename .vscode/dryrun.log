@@ -1,0 +1,10 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/aapresya/Desktop/philosophers'
+gcc -Wall -Wextra -Werror   -c -o exit.o exit.c
+ 
+gcc -Wall -Wextra -Werror   -c -o launch.o launch.c
+gcc -Wall -Wextra -Werror   -c -o main.o main.c
+gcc -Wall -Wextra -Werror   -c -o utils.o utils.c
+gcc exit.o launch.o main.o utils.o -Wall -Wextra -Werror -o philo
+make: Leaving directory `/Users/aapresya/Desktop/philosophers'
+ 
